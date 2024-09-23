@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+#banner {
+    margin-top: 20px; /* Adiciona espaço acima do banner */
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    background: #FFC609;
+    color: #000000;
+    padding: 10px 0;
+    margin-bottom: 0; /* Remover margem inferior */
+}
+
+
+
+
+/* Estilo de navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+
+
+/* Estilo do logo */
+.logo img {
+    height: 60px;
+    width: auto;
+    transform: scale(5);
+    transform-origin: left center;
+}
+
+
+
+
+/* Estilo dos links de navegação */
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: 'Inter', sans-serif; /* Muda para a fonte Inter */
+}
+
+
+
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+
+
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+
+
+.nav-links a:hover {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+
+
+
+/* Estilo principal da página */
+main {
+    background-color: #fffbfb;
+    position: relative; /* Para posicionamento do botão de confirmar */
+}
+
+
+
+
+/* Estilo do banner */
+#banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Estilo da imagem do banner */
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Estilo da seção de busca */
+#busca {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Borda arredondada igual à da busca */
+}
+
+
+
+
+/* Wrapper para itens de busca */
+.busca-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 500px; /* Limita a largura para manter a centralização */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+
+
+
+/* Estilo dos itens de busca */
+.busca-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 5px; /* Ajusta o espaço entre os itens */
+}
+
+
+
+
+/* Estilo dos campos de entrada na busca */
+.busca-item input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Borda arredondada igual à da busca */
+    background-color: #f0f0f0;
+    width: 100%;
+    padding-right: 40px; /* Adiciona espaço para o ícone */
+}
+
+
+
+
+/* Estilo da lupa */
+.lupa {
+    position: absolute;
+    right: 10px; /* Ajusta a posição horizontal do ícone */
+    font-size: 20px; /* Ajusta o tamanho do ícone */
+    color: #000; /* Define a cor do ícone */
+    pointer-events: none; /* Faz com que o ícone não interfira na interação do campo de entrada */
+}
+
+
+
+
+
+/* Estilo da seção de detalhes */
+#detalhes {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap; /* Permite a quebra de linha para itens que não cabem em uma linha */
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px; /* Borda arredondada igual à da busca */
+}
+
+
+/* Estilo dos campos */
+.campo {
+    display: flex;
+    align-items: center;
+    position: relative; /* Adicionado para permitir o posicionamento absoluto do ícone */
+    gap: 10px; /* Espaço entre o ícone e o campo de entrada */
+    flex: 1; /* Faz com que os campos ocupem o espaço disponível igualmente */
+    min-width: 150px; /* Define uma largura mínima para os campos */
+}
+
+
+/* Estilo dos ícones dentro dos campos */
+.campo .icon {
+    position: absolute;
+    left: 10px; /* Ajuste a posição horizontal do ícone */
+    font-size: 20px; /* Ajusta o tamanho do ícone */
+    color: #000; /* Define a cor do ícone */
+}
+
+
+/* Estilo dos campos de entrada na seção de detalhes */
+.campo input {
+    padding: 10px 10px 10px 40px; /* Adiciona espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Borda arredondada igual à da busca */
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+
+/* Estilo dos campos de entrada para data e hora */
+.campo input[type="date"], .campo input[type="time"] {
+    width: 150px; /* Largura específica para campos de data e hora */
+   
+}
+
+
+/* Especificamente para os campos com ícones de telefone, descrição e valor */
+.campo input[type="text"].telefone {
+    padding-left: 40px; /* Espaço para o ícone de telefone */
+}
+
+
+.campo input[type="text"].descricao {
+    padding-left: 40px; /* Espaço para o ícone de descrição */
+}
+
+
+.campo input[type="text"].valor {
+    padding-left: 40px; /* Espaço para o ícone de valor */
+}
+
+
+/* Estilo específico para o campo de data (dia) */
+.campo input[type="date"] {
+    padding-left: 10px; /* Remove o espaço para o ícone para alinhar à esquerda */
+    width: 100%; /* Largura específica para o campo de data */
+    max-width: 240px; /* Largura máxima para o campo de data */
+    font-size: 16px; /* Ajusta o tamanho da fonte para uma melhor legibilidade */
+}
+
+
+/* Estilo específico para o campo de hora */
+.campo input[type="time"] {
+    padding-left: 10px; /* Remove o espaço para o ícone para alinhar à esquerda */
+    width: 200px; /* Largura específica para o campo de hora */
+    max-width: 150px; /* Largura máxima para o campo de hora */
+    font-size: 16px; /* Ajusta o tamanho da fonte para uma melhor legibilidade */
+}
+
+
+
+
+
+
+/* Estilo do botão de confirmar */
+#confirmar-btn {
+    position: absolute; /* Mude para absolute */
+    bottom: 25px; /* Distância do fundo */
+    right: 60px; /* Distância da direita */
+    left: auto; /* Remova qualquer ajuste à esquerda */
+    transform: translateX(50%); /* Centraliza horizontalmente */
+    padding: 10px 35px;
+    background-color: #FFC609;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
+
+#confirmar-btn:hover {
+    background-color: #E0B607; /* Cor ao passar o mouse */
+}
+
+
+
+
+/* Consultas de mídia para responsividade */
+
+
+
+
+/* Estilo para telas pequenas */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+        align-items: center;
+    }
+
+
+
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+
+
+
+    .busca-wrapper {
+        flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+        width: 90%;
+    }
+
+
+
+
+    .busca-item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+
+
+
+    .lupa {
+        font-size: 16px; /* Reduz o tamanho do ícone em telas pequenas */
+    }
+
+
+
+
+    #detalhes {
+        width: 90%;
+    }
+
+
+
+
+    .campo {
+        flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+        width: 100%;
+    }
+
+
+
+
+    .campo input {
+        margin-bottom: 10px; /* Espaço entre campos em telas pequenas */
+    }
+}
+
+
+
+
+/* Estilo para telas muito pequenas */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px; /* Reduz o tamanho do logo em telas muito pequenas */
+    }
+
+
+
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .busca-item input {
+        font-size: 14px; /* Reduz o tamanho da fonte dos campos de entrada */
+    }
+
+
+
+
+    #confirmar-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

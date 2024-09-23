@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    background: #FFC609;
+    color: #000000;
+    padding: 10px 0;
+    margin-bottom: 0; /* Remover margem inferior */
+}
+
+
+/* Estilo de navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+/* Estilo do logo */
+.logo img {
+    height: 60px;
+    width: auto;
+    transform: scale(5);
+    transform-origin: left center;
+}
+
+
+/* Estilo dos links de navegação */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+.nav-links a:hover {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+
+/* Estilo principal da página */
+main {
+    background-color: #fffbfb;
+    position: relative; /* Para posicionamento do botão de confirmar */
+}
+
+
+/* Estilo do banner */
+#banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espaço entre a nav bar e o banner */
+}
+
+
+/* Estilo da imagem do banner */
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Estilo da seção de busca */
+#busca {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Wrapper para itens de busca */
+.busca-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 500px; /* Limita a largura para manter a centralização */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+
+/* Estilo dos itens de busca */
+.busca-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 5px; /* Ajusta o espaço entre os itens */
+}
+/* Estilo dos campos de entrada na busca */
+.busca-item input,
+.busca-item select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+    padding-right: 40px; /* Adiciona espaço para o ícone */
+}
+
+/* Wrapper dos itens de busca para terem a mesma largura */
+.busca-wrapper .busca-item {
+    flex: 1; /* Garante que os itens tenham a mesma largura */
+}
+
+/* Estilo do dropdown */
+.busca-item select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* Estilo da seta do dropdown */
+.busca-item select:after {
+    content: '\f107'; /* Ícone da seta para baixo do FontAwesome */
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+}
+
+/* Estilo da seção de detalhes */
+#detalhes {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Exibe itens verticalmente por padrão */
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Wrapper para campos de entrada */
+.entrada-wrapper {
+    display: flex;
+    gap: 10px; /* Espaço entre os campos */
+    justify-content: center; /* Centraliza horizontalmente os campos dentro do wrapper */
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do wrapper */
+}
+
+
+/* Estilo dos campos de entrada na seção de detalhes */
+.entrada input,
+.descricao input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    height: 40px; /* Altura uniforme */
+    width: 160px; /* Largura consistente para os campos de data e hora */
+}
+
+
+/* Estilo do campo de descrição */
+.descricao {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 160px; /* Garante que o campo de descrição tenha a mesma largura que os campos de data e hora */
+}
+
+
+.descricao i {
+    position: absolute;
+    left: 10px; /* Ajuste conforme necessário */
+    font-size: 16px; /* Pode ajustar o tamanho do ícone aqui */
+    color: #000;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para que o ícone fique perfeitamente centrado */
+}
+
+
+.descricao input {
+    padding-left: 35px; /* Cria espaço para o ícone */
+    padding-right: 10px; /* Ajuste se necessário */
+    width: 100%;
+    border-radius: 20px; /* Mantém o estilo arredondado */
+    background-color: #f0f0f0;
+    height: 40px; /* Garante que a altura seja consistente com as outras caixas */
+}
+
+
+/* Estilo da caixa de seleção */
+.checkbox-container {
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    gap: 10px; /* Espaço entre as caixas */
+    margin-top: 20px; /* Espaço acima da caixa de seleção */
+}
+
+
+/* Estilo individual de cada checkbox */
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o checkbox e o texto */
+}
+
+
+/* Estilo do botão de confirmar */
+#confirmar-btn {
+    position: fixed; /* Posição fixa */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+    padding: 10px 20px;
+    background-color: #FFC609;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#confirmar-btn:hover {
+    background-color: #ffa500;
+}

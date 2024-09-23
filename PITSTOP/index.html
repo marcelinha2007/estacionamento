@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pit Stop</title>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        </head>
+        <body>
+            <!-- Cabeçalho da página -->
+            <header>
+                <!-- Navegação principal da página -->
+                <nav>
+                    <!-- Div para o logo -->
+                    <div class="logo">
+                        <!-- Imagem do logo -->
+                        <img src="img/logo.png" alt="Logo">
+                    </div>
+                    <!-- Lista de links de navegação -->
+                    <ul class="nav-links">
+                        <!-- Itens de navegação com links para diferentes seções da página -->
+                        <li><a href="#lava-jato">LavaJato</a></li>
+                        <li><a href="#estacionamento">Estacionamento</a></li>
+                        <li><a href="#listagem">Listagem</a></li>
+                    </ul>
+                </nav>
+            </header>
+           
+            <!-- Corpo principal da página -->
+            <main>
+                <!-- Seção de banner com imagem principal -->
+                <section id="banner">
+                    <img src="img/Aesthetic Twitter Header.jpeg" alt="Banner" class="banner-image">
+                </section>
+        
+                <!-- Seção de busca -->
+                <section id="busca">
+                    <!-- Wrapper para itens de busca -->
+                    <div class="busca-wrapper">
+                        <!-- Item de busca para o campo de estacionamento com dropdown -->
+                        <div class="busca-item">
+                            <select id="estacionamento">
+                                <option value="opcao1">Estacionamento </option>
+                                <option value="opcao2">Lava-jato</option>
+                            </select>
+                        </div>
+                        <!-- Item de busca para o campo de placa -->
+                        <div class="busca-item">
+                            <input type="text" placeholder="Placa">
+                        </div>
+                    </div>
+                </section>
+               
+                <!-- Seção de detalhes -->
+                <section id="detalhes">
+                    <!-- Wrapper para campos de data, hora e descrição -->
+                    <div class="entrada-wrapper">
+                        <!-- Campo de data -->
+                        <div class="entrada">
+                            <input type="date" placeholder="Dia">
+                        </div>
+                        <!-- Campo de hora -->
+                        <div class="entrada">
+                            <input type="time" placeholder="Hora">
+                        </div>
+                        <!-- Campo de descrição com ícone de carrinho -->
+                        <div class="descricao">
+                            <i class="fas fa-car"></i> <!-- Ícone de carrinho -->
+                            <input type="text" placeholder="Descrição">
+                        </div>
+                    </div>
+                </section>
+               
+                <!-- Botão de confirmar no canto inferior direito -->
+                <button id="confirmar-btn">Confirmar</button>
+            </main>
+        </body>
+       

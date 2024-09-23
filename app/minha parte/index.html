@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pit Stop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Navegação principal da página -->
+        <nav>
+            <!-- Div para o logo -->
+            <div class="logo">
+                <!-- Imagem do logo -->
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <!-- Lista de links de navegação -->
+            <ul class="nav-links">
+                <!-- Itens de navegação com links para diferentes seções da página -->
+                <li><a href="#lava-jato">LavaJato</a></li>
+                <li><a href="#estacionamento">Estacionamento</a></li>
+                <li><a href="#listagem">Listagem</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção de banner com imagem principal -->
+        <section id="banner">
+            <img src="img/Aesthetic Twitter Header.jpeg" alt="Banner" class="banner-image">
+        </section>
+
+
+
+
+        <!-- Seção de busca -->
+        <section id="busca">
+            <!-- Wrapper para itens de busca -->
+            <div class="busca-wrapper">
+                <!-- Item de busca para o campo de estacionamento -->
+                <div class="busca-item">
+                    <input type="text" placeholder="Lava Jato">
+                </div>
+                <!-- Item de busca para o campo de placa -->
+                <div class="busca-item">
+                    <input type="text" placeholder="Placa">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seção de detalhes -->
+        <section id="detalhes">
+            <!-- Campo de nome do cliente -->
+            <div class="campo">
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                <input type="text" placeholder="Nome">
+            </div>
+
+
+
+
+            <!-- Campos para data, hora e descrição -->
+            <div class="campo">
+                <input type="date" placeholder="Dia">
+                <input type="time" placeholder="Hora">
+            </div>
+
+
+
+
+            <!-- Campo de telefone -->
+            <div class="campo">
+                <span class="icon"><i class="fas fa-phone"></i></span>
+                <input type="text" class="telefone" placeholder="Telefone">
+            </div>
+           
+
+
+
+
+            <!-- Campo de descrição com ícone de carrinho -->
+            <div class="campo">
+                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                <input type="text" class="descricao" placeholder="Descrição">
+            </div>
+
+
+
+
+            <!-- Campo de valor -->
+            <div class="campo">
+                <span class="icon"><i class="fas fa-tag"></i></span>
+                <input type="text" class="valor" placeholder="Valor (R$)" pattern="^\d+(\.\d{1,2})?$" title="Formato: 00.00">
+            </div>
+        </section>
+
+
+
+
+        <!-- Botão de confirmar no canto inferior direito -->
+        <button id="confirmar-btn">Confirmar</button>
+    </main>
+</body>
+</html>
